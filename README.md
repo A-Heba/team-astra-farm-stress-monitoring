@@ -109,6 +109,7 @@ The perennial rule is deliberately asymmetric. A flat curve that is *not* green 
 ### 4.4 Calendar-aware failure test
 
 The core idea is to compare each crop only with crops that emerged at the same time. For plot *i* with green-up date *g<sub>i</sub>* and green-season length *L<sub>i</sub>*:
+
 $$
 C_i = \{j \neq i : |g_j-g_i| \le 20\ \text{days}\},
 \qquad
