@@ -113,7 +113,7 @@ The core idea is to compare each crop only with crops that emerged at the same t
 $$
 C_i = \lbrace\, j \neq i \;:\; |g_j - g_i| \le 20\ \text{days} \,\rbrace,
 \qquad
-\text{shortfall}_i = \operatorname{median}_{j \in C_i} L_j \;-\; L_i
+\text{shortfall}_i = \mathrm{median}_{j \in C_i} L_j \;-\; L_i
 $$
 
 where *j* ranges over the other plots with a complete cycle. A plot is flagged as a **priority** for inspection when its cohort has at least five members and its shortfall is at least 25 days. Crops in the same cohort share the calendar, the weather and the stage of development. The reference is therefore local and empirical: no external crop calendar is assumed, and December harvests are compared only with other December harvests.
