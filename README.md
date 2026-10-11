@@ -110,11 +110,9 @@ The perennial rule is deliberately asymmetric. A flat curve that is *not* green 
 
 The core idea is to compare each crop only with crops that emerged at the same time. For plot *i* with green-up date *g<sub>i</sub>* and green-season length *L<sub>i</sub>*:
 
-$$
-C_i = \{j \neq i : |g_j-g_i| \le 20\ \text{days}\},
-\qquad
-\text{shortfall}_i = \text{median}_{j \in C_i}(L_j)-L_i
-$$
+$$C_i = \{ j : |g_j - g_i| \leq 20 \text{ days} \}$$
+
+$$\text{shortfall}_i = \text{median}_{j \in C_i}(L_j) - L_i$$
 
 where *j* ranges over the other plots with a complete cycle. A plot is flagged as a **priority** for inspection when its cohort has at least five members and its shortfall is at least 25 days. Crops in the same cohort share the calendar, the weather and the stage of development. The reference is therefore local and empirical: no external crop calendar is assumed, and December harvests are compared only with other December harvests.
 
